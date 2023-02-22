@@ -8,7 +8,7 @@ freezer = Freezer(app)
 def index():
     return render_template('index.html')
 
-@app.route('/blog/')
+@freezer.register_generator('/blog/')
 def blog():
     return render_template('blog.html')
 
