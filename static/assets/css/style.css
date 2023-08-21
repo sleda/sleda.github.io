@@ -26,6 +26,7 @@ color: #fff;
 background: linear-gradient(to right, #BB86FC 0, #fff 10%, #BB86FC 20%);
 background-position: 0;
 -webkit-background-clip: text;
+background-clip: text;
 -webkit-text-fill-color: transparent;
 animation: shine 3s infinite linear;
 animation-fill-mode: forwards;
