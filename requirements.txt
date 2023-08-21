@@ -1,2 +1,2 @@
-Flask_Frozen
+Flask-Frozen
 flask
