@@ -25,7 +25,7 @@ def whoami():
 def necmo_bot():
     return render_template('necmo.html')
 
-@app.route('/blog/network-protocols/')
+@app.route('/network-protocols/')
 def article_network_protocols():
     return render_template('network-p.html')
 
