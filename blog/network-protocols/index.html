@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Blog - Self-Improvement to Ethical Hacking</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="" />
+    <link rel="shortcut icon" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/ad7c10301e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <a name="top"></a>
+     <body class="bg-dark" cz-shortcut-listen="true">
+
+    <header>
+      <div id="banner">
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 1;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 2;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+        </div>
+"Personal Blog"
+</div>
+    </header>
+    <div class="menu">
+      <ul>
+        <li><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
+        <li style="background-color: #99999950;"><a href="/blog/">Blog</a></li>
+        <li><a href="/pentest/">Pentest</a></li>
+        <li><a href="/whoami/">Whoami</a></li>
+        <li><a href="/necmo/" class="btn-shine">Necmo-Bot</a></li>
+      </ul>
+    </div>
+    <main>
+      <div style="width:100%;text-align:right;"> </div>
+      <ul style="text-align: center; background-color: #575757;">
+        <a> <b style="color: #ffcc66;">Basic</b> | <b style="color: #339999;">Medium</b>
+          | <b style="color: #009900;">Advanced</b> | <b style="color: #cc3558;">Article</b>
+        </a>
+      </ul>
+      <div class="post">
+        <header class="post-header">
+          <h1>Ağ Protokolleri <span style="color:#cc3558 ;font-size:14px;">Article</span></h1>
+          <p class="meta">
+            12 Ağustos, 2022 • 
+            <span>TECHNOLOGY</span>
+          </p>
+        </header>
+        <article class="post-content">
+          <h2>ARP</h2>
+          <p>
+            Adres Çözümleme Protokolü, MAC adreslerini IP adreslerine eşlemek için kullanılan bir layer 2 protokolüdür. 
+            Bir ağdaki tüm ana bilgisayarlar IP adreslerine göre bulunur, ancak NIC'lerin IP adresleri yoktur, MAC adresleri vardır. ARP, IP adresini bir MAC adresiyle ilişkilendirmek için kullanılan protokoldür. <br /><br />
+            Bir ana bilgisayar başka bir ana bilgisayara bir paket göndermek istediğinde, örneğin 10.5.5.1 IP adresi kendi yerel alan ağında (LAN), önce bir ARP paketi gönderir (yayınlar). ARP paketi basit bir soru içerir: 10.5.5.1 IP adresine karşılık gelen MAC adresi nedir? IP adresini kullanmak üzere yapılandırılmış ana bilgisayar, MAC adresini içeren bir ARP paketi ile yanıt verir.
+          </p>
+          
+          <h2>NAT</h2>
+          <p>
+            NAT yani, Network Address Translation ile, özel, dahili bir ağda bulunan bilgisayarlar, genellikle bir güvenlik duvarı olan bir ağ aygıtı aracılığıyla dönüştürülür ve bu ağ aracılığıyla genel internetle iletişim kurabilir. Tek tek dahili IP adreslerini tek tek harici IP adreslerine eşlemek için NAT kullanılır ve NAT bir layer 3 protokoldür.
+            (NAT), dahili veya özel adresleri genel veya küresel olarak yönlendirilebilir İnternet Protokolü (IP) adreslerine değiştirir.
+            <br/ ><br/ >NAT, kısaca dahili ağın IP adreslerini gizler. Yönlendirmeyi kolaylaştırır. Dahili ana bilgisayarlara dahili ağdan IP adresleri atanır, böylece diğer dahili sistemler onlara özel yollar veya yönlendiriciler olmadan erişebilir. Aynı ana bilgisayarlara, genel ağdan, NAT tarafından çevrilen küresel olarak yönlendirilebilir IP adresleri aracılığıyla erişilir.
+          </p>
+          
+          <h2>DHCP</h2>
+          <p>
+            Dynamic Host Configuration Protocol yani, Dinamik Ana Bilgisayar Yapılandırma Protokolü, bir ağdaki cihazlara IP adreslerini ve diğer yapılandırma seçeneklerini dinamik olarak atar ve bir layer 7 protokolüdür. Bu şekilde ağa, yeni bilgisayarlar, tabletler veya akıllı telefonlar eklemeyi kolaylaştırır.
+            <br /><br />DHCP sunucusu bu işi yaptığı için yöneticilerin artık her cihazı manuel olarak yapılandırması gerekmez. Bu nedenle DHCP, örneğin okullar, şirketler vb. gibi sürekli değişen istemcileri olan daha büyük ağlar için çok kullanışlıdır.
+            DHCP sunucusu istemcilere alt ağ maskesi, sunucu ismi, domain adı ve ağ geçidi gibi diğer bilgileri de aktarabilir
+          </p>
+          
+          <h2>DNS</h2>
+          <p>DNS yani, Domain Name System sayesinde kimsenin IP adreslerini hatırlaması gerekmez. Alan Adı Sistemi (DNS), internete veya özel bir ağa bağlı bilgisayarlar, hizmetler vb. için merkezi olmayan bir adlandırma sistemidir ve bir layer 7 protokolüdür.
+            <br /><br />DNS telefon rehberimize numara kaydetmek gibi çalışır: <a href="http://www.gaissecurity.com">www.gaissecurity.com</a> gibi alan adlarını sayısal IP adreslerine (örn: 78.47.199.152) atar ve bunun tersi de geçerlidir. DNS, birlikte çalışan binlerce sunucudan oluşur. Bir sunucu bir adı veya IP'yi çözemezse, yapması için başka bir sunucuya sorarak iletişim kurabilir ve bu böyle devam eder.
+          </p>
+          
+          <h2>IP & MAC</h2>
+          <p>IP yani Internet Protocol adresi, İnternet'e bağlanan bir cihaza veya etki alanına atanan benzersiz bir tanımlayıcıdır. Her IP adresi, '192.168.1.1' gibi bir dizi karakterden oluşur. Kullanıcılar, insan tarafından okunabilen alan adlarını IP adreslerine çeviren DNS çözümleyicileri aracılığıyla , bu karmaşık karakter dizisini ezberlemeden web sitelerine erişebilir. 
+            Her IP paketi, hem hedef adresin hem de iade adresinin bir posta parçasına dahil edilmesi gibi, hem paketi gönderen cihazın veya etki alanının IP adresini hem de hedeflenen alıcının IP adresini içerecektir.</p>
+            <br />MAC yani Media Access Control, üretim sırasında bir ağ kartına ( Ağ Arayüz Kartı olarak bilinir) gömülü olan bir bilgisayarın benzersiz 48 bitlik donanım numarasıdır. MAC Adresi, bir ağ cihazının Fiziksel Adresi olarak da bilinir. Çoğunlukla İki Noktalı Onaltılık gösterimle temsil edilen 12 basamaklı bir onaltılık sayıdır.
+            <br /><br />MAC adresi, Veri Bağlantısı Katmanının Medya Erişim Kontrolü (MAC) alt katmanı tarafından kullanılır. Milyonlarca ağ cihazı bulunduğundan ve her birini benzersiz bir şekilde tanımlamamız gerektiğinden dünya çapında benzersizdir. Fakat sonradan kullanıcı tarafından bazı yöntemlerle bu değiştirilebilir.
+          </p>
+          
+          <h2>ICMP</h2>
+          <p>ICMP'nin birincil amacı, hata raporlamak içindir. İki cihaz İnternet üzerinden bağlandığında, ICMP, verilerden herhangi birinin amaçlanan hedefine ulaşmaması durumunda gönderen cihazla paylaşmak için hatalar üretir. Örneğin, bir veri paketi bir yönlendirici için çok büyükse, yönlendirici paketi düşürür ve veriler için orijinal kaynağa bir ICMP mesajı gönderir.
+
+            <br /><br />ICMP protokolünün ikincil bir kullanımı, ağ teşhisi gerçekleştirmektir; yaygın olarak kullanılan terminal yardımcı programları traceroute ve ping, ICMP kullanarak çalışır.</p>
+            <br />Internet Protokol'ün (IP) aksine , ICMP, TCP veya UDP gibi bir taşıma katmanı protokolü ile ilişkili değildir. Bu, ICMP'yi bağlantısız bir protokol yapar: bir cihazın, bir ICMP mesajı göndermeden önce başka bir cihazla bağlantı açmasına gerek yoktur. Normal IP trafiği TCP kullanılarak gönderilir; bu, veri alışverişi yapan herhangi iki cihazın, her iki cihazın da veri almaya hazır olduğundan emin olmak için önce bir TCP anlaşması gerçekleştireceği anlamına gelir. ICMP bu şekilde bir bağlantı açmaz. ICMP protokolü ayrıca bir cihazdaki belirli bir bağlantı noktasının hedeflenmesine de izin vermez.
+          </p>
+          
+          <h2>SNMP</h2>
+          <p>Simple Network Management Protocol, bir kuruluşun 1000 cihazı varsa, her gün tek tek tüm cihazların düzgün çalışıp çalışmadığını kontrol etmek yoğun bir iştir. Bunları kolaylaştırmak için Basit Ağ Yönetim Protokolü (SNMP) kullanılır. Basit Ağ Yönetim Protokolü (SNMP) – SNMP, 161/162 numaralı UDP bağlantı noktasını kullanan bir uygulama katmanı protokolüdür. SNMP, ağı izlemek, ağ hatalarını algılamak ve hatta bazen uzak cihazları yapılandırmak için kullanılır.</p>
+          
+          <h2>FTP</h2>
+          <p>File Transfer Protocol (FTP), dosyaları yerel ve uzak dosya sistemleri arasında taşıyan bir layer 7 uygulama katmanı protokolüdür. HTTP gibi TCP'nin üstünde çalışır. Bir dosyayı aktarmak için FTP tarafından paralel olarak 2 TCP bağlantısı kullanılır: kontrol bağlantısı ve veri bağlantısı.</p>
+          
+          <h2>SSH</h2>
+          <p>SSH veya Secure SHell, artık yalnızca internet üzerinden ağ aygıtlarına ve sunucularına erişmek için kullanılan ana protokoldür. SSH, SSH Communications Security Ltd. tarafından geliştirilmiştir. Ağ üzerinden başka bir bilgisayara giriş yapmak, uzak bir makinede komutları yürütmek ve dosyaları bir makineden diğerine taşımak için kullanılan bir programdır.</p>
+         
+          <h2>Telnet</h2>
+          <p>
+            Telnet , Telecommunications and Networks kısaltmasıdır ve en iyi UNIX platformu için bilinen bir ağ protokolüdür. Telnet, 23 numaralı bağlantı noktasını kullanır ve özellikle yerel alan ağları[LAN] için tasarlanmıştır.
+            <br /> Telnet güvenli bir iletişim protokolü değildir çünkü herhangi bir güvenlik mekanizması kullanmaz ve verileri ağ/internet üzerinden şifreler de dahil olmak üzere düz metin biçiminde aktarır ve böylece herkes bu önemli bilgileri almak için paketleri koklayabilir.  
+          </p>
+
+          <h2>VPN</h2>
+          <p>Sanal Özel Ağ (VPN), bir kullanıcının İnternet üzerinden güvenli ve özel bir şekilde özel bir ağa bağlanmasına izin verir . VPN, VPN tunnel adı verilen şifreli bir bağlantı oluşturur ve tüm İnternet trafiği ve iletişimi bu güvenli tünelden geçirilir.
+            Sanal Özel Ağ (VPN) temel olarak 2 türdür:<br />
+          <h3>Remote Access VPN:</h3>Bir kullanıcının özel bir ağa bağlanmasına ve tüm hizmetlerine ve kaynaklarına uzaktan erişmesine izin verir. Kullanıcı ile özel ağ arasındaki bağlantı İnternet üzerinden gerçekleşir ve bağlantı güvenli ve özeldir.
+          <h3>Site-to-Site VPN:</h3>Router-to-Router VPN olarak da adlandırılır ve büyük şirketlerde yaygın olarak kullanılır. Farklı konumlarda şubeleri olan şirketler veya kuruluşlar, bir ofis konumunun ağını başka bir ofis konumundaki ağa bağlamak için Site-to-Site VPN kullanır.
+            <br /><br />
+          <h4>Intranet tabanlı VPN:</h4> Aynı şirketin birden fazla ofisi Siteden Siteye VPN türü kullanılarak bağlandığında buna Intranet tabanlı VPN denir.<br/>
+          <h4>Extranet tabanlı VPN:</h4> Şirketler, başka bir şirketin ofisine bağlanmak için Siteden siteye VPN türünü kullandıklarında buna Extranet tabanlı VPN denir.
+        </p>
+        </article>
+      </div>
+    </main>
+    <button style="background-color: #121212; border: 1px solid #7B61FF;border-radius: 2px;"  title="Go to top"><a style="color:white;" href="#top">Yukarı git</a></button>
+
+    <footer> © Copyright, 2022 | Sponsored by
+      <li><a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce;">self-sponsored</a></li>
+    </footer>
+    <script id="dsq-count-scr" src="js/count.js" async></script>
+  
+</body></html>
