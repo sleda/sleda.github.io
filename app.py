@@ -29,15 +29,15 @@ def necmo_bot():
 def article_network_protocols():
     return render_template('network-p.html')
 
-@app.route('/blog/network-technologies/')
+@app.route('/network-technologies/')
 def article_network_technologies():
     return render_template('network-technologies.html')
 
-@app.route('/blog/cs-aviation/')
+@app.route('/cs-aviation/')
 def article_cs_aviation():
     return render_template('cs-aviation.html')
 
-@app.route('/blog/whiplash/')
+@app.route('/whiplash/')
 def whiplash():
     return render_template('whiplash.html')
 
