@@ -21,6 +21,10 @@ def whoami():
 def pentest():
     return render_template('projects.html')
 
+@app.rout('/multitool/')
+def multitool():
+    return render_template('multitool.html')
+
 @app.route('/necmo/')
 def necmo_bot():
     return render_template('necmo.html')
