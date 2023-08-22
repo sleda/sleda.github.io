@@ -21,7 +21,7 @@ def whoami():
 def pentest():
     return render_template('projects.html')
 
-@app.rout('/multitool/')
+@app.route('/multitool/')
 def multitool():
     return render_template('multitool.html')
 
