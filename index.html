@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/assets/css/style.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="../static/assets/css/translateelement.css">
     <script src="https://kit.fontawesome.com/ad7c10301e.js" crossorigin="anonymous"></script>
-
+      
     <script>
       function changeLanguage(lang) {
         if (lang === 'tr') {
@@ -77,6 +77,11 @@
             <h4>Latest Posts:</h4>
             <ul class="posts">
               <li>
+                <div id="data">22 Aug 2023</div>
+                :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                        </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[TR] OpenAI-Multitool</b></a>
+              </li>
+              <li>
                 <div id="data">16 Aug 2022</div>
                 :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
                         </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[TR] Havacılık Sektöründe Siber Güvenlik</b></a>
@@ -85,16 +90,27 @@
                 <div id="data">09 Aug 2022</div>
                 :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
                         </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[TR] Bu Website oluşturuldu.</b></a>
-                </li>
+              </li>
             </ul>
             
-            <div class="conteiner">
-              <pre><span class="comment">/" 
-Bir saldırının bir kişiyi etkileyebileceği birçok farklı saldırı ve birçok farklı yol var. 
-Özellikle güvenlik üzerinde etkisi olabilecek tüm farklı senaryolar üzerinde çalışılmalıdır.
-"/
-</span></pre>
+            <div class="container">
+              <div class="slider">
+                <pre class="quote" style="display: none;"><span class="comment">Bir saldırının bir kişiyi etkileyebileceği birçok farklı saldırı ve birçok farklı yol var.</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">Özellikle güvenlik üzerinde etkisi olabilecek tüm farklı senaryolar üzerinde çalışılmalıdır.</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"O hatayı düzelttim, sadece etkisini göstermedi. Sabret."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Her şeyi test edemem. Mükemmel olmayı hedeflemek, pratikte mükemmelliğe ulaşmamı engelliyor."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Veritabanı sadece bir depo değil, bir projenin kalbidir. Ona iyi bakmalısın."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Sorunun kaynağını bulmak, çözümü bulmaktan daha değerlidir."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Yavaş bir sunucu, yavaş bir düşünce sürecinin ürünüdür."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Bir API sadece bir arayüz değil, iki sistem arasındaki köprüdür. O köprüyü güçlü tutmalısın."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Kod yazmak bir sanattır, her hatada tuvali yeniden boyamazsın."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"Bir hata bulduğunda üzülme, çünkü onu bulabildiğin için şanslısın. Daha kötüsü, hatanın gizli kalmasıdır."</span></pre>
+                <pre class="quote" style="display: none;"><span class="comment">"İyi bir backend geliştirici, sorunları önler; harika bir backend geliştirici, onları hiç oluşmamış gibi gösterir."</span></pre>
+                <!-- Daha fazla söz. -->
+                
+              </div>
             </div>
+            
           
         </article>
       </div>
@@ -105,6 +121,32 @@ Bir saldırının bir kişiyi etkileyebileceği birçok farklı saldırı ve bir
     <script id="dsq-count-scr" src="js/count.js" async></script>
 
      <!--flask requirements-->
+     <script>
+      let currentQuoteIndex = 0;
+      const quotes = document.querySelectorAll('.quote');
+
+      function displayQuote(index) {
+        quotes.forEach((quote, i) => {
+          quote.style.display = i === index ? 'block' : 'none';
+        });
+      }
+
+      function nextQuote() {
+        currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+        displayQuote(currentQuoteIndex);
+      }
+
+      function prevQuote() {
+        currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
+        displayQuote(currentQuoteIndex);
+      }
+
+      // Otomatik olarak her 5 saniyede bir sonraki söze geçmek için:
+      setInterval(nextQuote, 5000);
+
+      // İlk sözü göstermek için:
+      displayQuote(currentQuoteIndex);
+     </script>
      <script
      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
