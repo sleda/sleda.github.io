@@ -230,18 +230,24 @@ text-align: center;
   border: 1px dashed #a6a6a6;
   border-radius: 3px;
 }
+
+.menu ul {
+  padding-left: 15px;
+}
+
 .menu ul li {
   display: inline;
   margin-left: 5px;
 }
-.menu ul li a {
+
+.menu a {
   text-decoration: none;
   color: #BB86FC;
   text-align: center;
   padding: 2px;
 }
-.menu ul li a:hover {
-  padding: 2px;
+
+.menu a:hover {
   border-bottom: 2px solid #ffffff87;
 }
 
