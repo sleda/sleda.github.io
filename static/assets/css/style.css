@@ -13,8 +13,8 @@ body {
 /* Tablet ve Mobil için Genel Duyarlı Stil Ayarları */
 @media (max-width: 992px) {
   body {
-    width: 100%; /* %100 genişlikte sayfanın tüm alanını kaplamasını sağlar */
-    max-width: 100%; /* Genişliği sınırlamak için */
+    width: 95%; /* %100 genişlikte sayfanın tüm alanını kaplamasını sağlar */
+    max-width: 95%; /* Genişliği sınırlamak için */
     overflow-x: hidden; /* Yatay kaydırmayı önler */
   }
 
@@ -29,9 +29,9 @@ body {
 
 h1 { color: #666699; }
 h2 { color: #03DAC5; }
-h3 { color:#8099aa; }
-h4 { color: #666699; }
-h5 { color: #666699; }
+h3 { color:#78ADD6; }
+h4 { color: #DCCAFA; }
+h5 { color: #D0FDD4; }
 
 #necmo-bot { color: #0074a1; }
 
