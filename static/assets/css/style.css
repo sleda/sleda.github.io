@@ -10,22 +10,56 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Tablet ve Mobil için Genel Duyarlı Stil Ayarları */
+/* Duyarlı Stil Ayarları */
+
+/* Ekran genişliği 992px ve altı için stil ayarlamaları */
 @media (max-width: 992px) {
   body {
-    width: 95%; /* %100 genişlikte sayfanın tüm alanını kaplamasını sağlar */
-    max-width: 95%; /* Genişliği sınırlamak için */
-    overflow-x: hidden; /* Yatay kaydırmayı önler */
+    width: 95%;
+    max-width: 95%;
+    overflow-x: hidden;
   }
 
   #p1 {
-    width: 90%; /* %90 genişlikte sayfanın daha merkezi olmasını sağlar */
+    width: 90%;
   }
 
   img {
-    width: 95%; /* Görsellerin daha uygun boyutta olmasını sağlar */
+    width: 95%;
+  }
+
+  video {
+    width: 98%;
+  }
+
+  #banner .stack span {
+    font-size: 1em;
   }
 }
+
+/* Ekran genişliği 892px ve altı için stil ayarlamaları */
+@media (max-width: 892px) {
+  #banner .stack span {
+    font-size: 0.8em;
+  }
+}
+
+/* Ekran genişliği 768px ve altı için stil ayarlamaları */
+@media (max-width: 768px) {
+  #banner .stack span {
+    font-size: 0.7em;
+  }
+}
+
+/* Ekran genişliği 576px ve altı için stil ayarlamaları */
+@media (max-width: 576px) {
+  #banner .stack span {
+    font-size: 0.6em;
+  }
+}
+
+
+
 
 h1 { color: #666699; }
 h2 { color: #03DAC5; }
@@ -128,6 +162,31 @@ header p {
 a {
   text-decoration: none;
   color: #666699;
+}
+
+.container .slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/*border: 1px solid #ccc; */
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.quote {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: pre-wrap;
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.fas {
+  cursor: pointer;
 }
 
 
