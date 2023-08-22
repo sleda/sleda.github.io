@@ -17,6 +17,10 @@ def blog():
 def whoami():
     return render_template('whoami.html')
 
+@app.route('/projects/')
+def pentest():
+    return render_template('projects.html')
+
 @app.route('/necmo/')
 def necmo_bot():
     return render_template('necmo.html')
