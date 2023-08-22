@@ -13,10 +13,6 @@ def index():
 def blog():
     return render_template('blog.html')
 
-@app.route('/pentest/')
-def pentest():
-    return render_template('pentest.html')
-
 @app.route('/whoami/')
 def whoami():
     return render_template('whoami.html')
