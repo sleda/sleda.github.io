@@ -11,7 +11,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /* Duyarlı Stil Ayarları */
+@media (min-width: 993px) {
+  body {
+    width: 800px;
+    max-width: 91%;
+    overflow-x: hidden;
+  }
 
+  #p1 {
+    width: 90%;
+  }
+
+  img {
+    width: 95%;
+  }
+
+  video {
+    width: 98%;
+  }
+
+  #banner .stack span {
+    font-size: 1em;
+  }
+}
 /* Ekran genişliği 992px ve altı için stil ayarlamaları */
 @media (max-width: 992px) {
   body {
@@ -188,12 +210,14 @@ a {
 .fas {
   cursor: pointer;
 }
+
 .hidden {
   visibility: hidden;
   opacity: 0;
   position: absolute; /* Bu, tüm cümleleri aynı konumda tutar. */
   width: 100%; /* Tam genişlikte olmasını sağlar. */
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -315,6 +339,7 @@ border-bottom:1px solid #75a4c18f;
   white-space: normal; 
   word-wrap: break-word;
   overflow-x: auto; 
+  font-size: small;
 }
 
 
