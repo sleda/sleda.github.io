@@ -188,6 +188,46 @@ a {
 .fas {
   cursor: pointer;
 }
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; /* Bu, tüm cümleleri aynı konumda tutar. */
+  width: 100%; /* Tam genişlikte olmasını sağlar. */
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1.5s infinite;
+}
 
 
 #data {
@@ -260,6 +300,32 @@ border-bottom:1px solid #75a4c18f;
   --color: #FAFAFA;
 }
 
+
+
+.highlight-container {
+  display: flex; 
+  justify-content: space-between; 
+  overflow-x: hidden;
+}
+
+.highlight {
+  flex-basis: calc(33% - 10px); 
+  box-sizing: border-box; 
+  margin-right: 5px; 
+  white-space: normal; 
+  word-wrap: break-word;
+  overflow-x: auto; 
+}
+
+
+.highlight:first-child {
+  flex-basis: calc(26% - 10px);
+}
+
+.highlight:last-child {
+  flex-basis: calc(42% - 10px);
+  margin-right: 0;
+}
 
 .container {
   color: var(--color);
