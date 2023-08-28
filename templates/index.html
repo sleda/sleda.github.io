@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Personal Blog - Self-Improvement to Development</title>
+    <title>Ihsan Ersen - Self-Growth & Code</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="" />
+    
+    <!-- Open Graph Etiketleri -->
+    <meta property="og:title" content="Ihsan Ersen - Personal Blog"/>
+    <meta property="og:description" content="Computer Engineering Student && Pilot"/>
+    <meta property="og:image" content="https://sleda.github.io/static/images/thumbnail.jpg"/>
+    <meta property="og:url" content="https://sleda.github.io/"/>  
+
     <link rel="shortcut icon" href="../static/images/favicon.ico" />
     <link rel="stylesheet" href="../static/assets/css/style.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="../static/assets/css/translateelement.css">
     <script src="https://kit.fontawesome.com/ad7c10301e.js" crossorigin="anonymous"></script>
       
     <script>
-      function changeLanguage(lang) {
-        if (lang === 'tr') {
-          // Add code to change to Turkish content
-        } else if (lang === 'en') {
-          // Add code to change to English content
+        function changeLanguage(lang) {
+          const trElements = document.querySelectorAll('.lang-tr');
+          const enElements = document.querySelectorAll('.lang-en');
+          const frElements = document.querySelectorAll('.lang-fr');
+      
+          if (lang === 'tr') {
+            trElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'none');
+          } else if (lang === 'en') {
+            trElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+          } else if (lang === 'fr') {
+            trElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'block');
+          }
         }
-      }
-    </script>
+        window.addEventListener('load', () => {
+          let lang;
+          if (navigator.language.startsWith('tr')) {
+            lang = 'tr';
+          } else if (navigator.language.startsWith('fr')) {
+            lang = 'fr';
+          } else {
+            lang = 'en';
+          }
+          changeLanguage(lang);
+        });
+
+      </script>
+      
   </head>
 
   <body class="bg-dark" cz-shortcut-listen="true">
     <header>
       <!-- Add language selection -->
-      <div class="language-selection">
-        <span onclick="changeLanguage('tr')">TR</span> | <span onclick="changeLanguage('en')">EN</span>
-      </div>
+      <header>
+        <!-- Dil seçimi -->
+        <div class="language-selection"> 
+          <button onclick="changeLanguage('en')"><img src="../static/icons/uk.svg" alt="EN" class="icon"></button> 
+          <button onclick="changeLanguage('fr')"><img src="../static/icons/fr.svg" alt="EN" class="icon"></button>
+          <button onclick="changeLanguage('tr')"><img src="../static/icons/tr.svg" alt="EN" class="icon"></button>
+        </div>
+      </header>
+      
       <div id="banner">
         <div class="stack" style="--stacks: 3;">
           <span style="--index: 0;">
@@ -65,18 +103,19 @@
         <li><a href="/projects/" class="btn-shine">Projects</a></li>
       </ul>
     </div>
-    <main>
-      <div class="post">
-        <header class="post-header">
-          <h1></h1>
-        </header>
-        <article class="post-content">
-          <p style="text-align:center;">"Experience is gained not by getting older, but by living; and time ripens pears, not people. <b><span style="color:#cccccc;"><br/>| Peyami Safa</span></b>"</p>
-          <p style="text-align:center;">[Intern] </p>
-
-          <div class="column-container">
-            <div class="highlight-container">
-                
+    <!-- Main content -->
+    <main class="lang-en">
+        <div class="post">
+          <header class="post-header">
+            <h1></h1>
+          </header>
+          <article class="post-content">
+            <p style="text-align:center;">"Experience is gained not by getting older, but by living; and time ripens pears, not people. <b><span style="color:#cccccc;"><br/>| Peyami Safa</span></b>"</p>
+            <p style="text-align:center;">[Intern]</p>
+      
+            <div class="column-container">
+                <div class="highlight-container">
+                    
                 <!-- Python -->
                 <div class="highlight">
                     <pre>
@@ -105,119 +144,305 @@
     <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
 }
 </pre>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        
-
+            
             <h4>Latest Posts:</h4>
             <ul class="posts">
               <li>
-                <div id="data">22 Aug 2023</div>
+                <div id="data">Aug 22, 2023</div>
                 :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
-                        </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[TR] OpenAI-Multitool</b></a>
+                        </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[EN] OpenAI-Multitool</b></a>
               </li>
               <li>
-                <div id="data">16 Aug 2022</div>
+                <div id="data">Aug 16, 2022</div>
                 :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
-                        </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[TR] Havacılık Sektöründe Siber Güvenlik</b></a>
+                        </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[EN] Cybersecurity in the Aviation Sector</b></a>
               </li>
               <li>
-                <div id="data">09 Aug 2022</div>
+                <div id="data">Aug 09, 2022</div>
                 :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
-                        </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[TR] Bu Website oluşturuldu.</b></a>
+                        </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[EN] This Website Was Created</b></a>
               </li>
             </ul>
             
             <div class="container">
               <div class="slider">
-                <pre class="quote hidden"><span class="comment">Kırmızı vosvos bi' araba.. Senle aydın ve muğla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Her şeyi tecrübe edemem. Mükemmel olmayı hedeflemek, pratikte mükemmelliğe ulaşmamı engelliyor.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Bir hack, kişiyi etkileyebileceği birçok farklı saldırı ve birçok farklı yol içerir.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Özellikle güvenlik üzerinde etkisi olabilecek tüm farklı senaryolar üzerinde çalışılmalıdır.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">O hatayı düzelttim, sadece etkisini göstermedi. Sabret.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Veritabanı sadece bir depo değil, bir projenin kalbidir. Ona iyi bakmalısın.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Sorunun kaynağını bulmak, çözümü bulmaktan daha değerlidir.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Yavaş bir sunucu, yavaş bir düşünce sürecinin ürünüdür.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Bir API sadece bir arayüz değil, iki sistem arasındaki köprüdür. O köprüyü güçlü tutmalısın.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Kod yazmak bir sanattır, her hatada tuvali yeniden boyayamazsın.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">Bir hata bulduğunda üzülme, çünkü onu bulabildiğin için şanslısın. Daha kötüsü, hatanın gizli kalmasıdır.</span><span class="cursor">|</span></pre>
-                <pre class="quote hidden"><span class="comment">İyi bir backend geliştirici, sorunları önler; harika bir backend geliştirici, onları hiç oluşmamış gibi gösterir.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A red VW Beetle, a trip to Aydin and Mugla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">I can't experience everything. Striving for perfection hampers practical perfection.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A hack comprises many different attacks and many different methods.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">All different scenarios that could particularly impact security should be worked on.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">I fixed that bug, it just didn't show its effect. Be patient.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A database is not just a storage, it's the heart of a project. You should take good care of it.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Finding the source of the problem is more valuable than finding the solution.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A slow server is the product of a slow thought process.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">An API is not just an interface, it's a bridge between two systems. You should keep that bridge strong.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Coding is an art, you can't repaint the canvas at every mistake.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Don't be sad when you find a bug, because you're lucky to have found it. Worse is when it remains hidden.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A good backend developer prevents problems; a great one makes them seem like they never happened.</span><span class="cursor">|</span></pre>
                 
-                <!-- Daha fazla söz. -->
+                <!-- More quotes. -->
                 
               </div>
             </div>
             
           
+          </article>
+        </div>
+      </main>
+      <footer class="lang-en">
+        © Copyright, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">self-sponsored</a>
+      </footer>
+      
+    <main class="lang-fr">
+      <div class="post">
+        <header class="post-header">
+          <h1></h1>
+        </header>
+        <article class="post-content">
+          <p style="text-align:center;">"L'expérience n'est pas acquise en vieillissant, mais en vivant; et le temps mûrit les poires, pas les gens. <b><span style="color:#cccccc;"><br/>| Peyami Safa</span></b>"</p>
+          <p style="text-align:center;">[Stagiaire]</p>
+    
+          <div class="column-container">
+            <div class="highlight-container">
+                
+                <!-- Python -->
+                <div class="highlight">
+                    <pre>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span>, <span class="nb">name</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<span class="nf">greet</span><span class="p">(</span><span class="s">"World"</span><span class="p">)</span>
+</pre>
+                </div>
+        
+                <!-- JavaScript -->
+                <div class="highlight">
+                    <pre>
+<span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">) {</span>
+  <span class="k">console.log</span><span class="p">(</span><span class="s">'Hello, '</span> + <span class="nb">name</span><span class="p">);</span>
+}
+<span class="nf">greet</span><span class="p">(</span><span class="s">'World'</span><span class="p">);</span>
+</pre>
+                </div>
+        
+                <!-- C++ -->
+                <div class="highlight">
+                  <pre>
+<span class="k">#include</span> <span class="s">&lt;iostream&gt;</span>
+<span class="k">int</span> <span class="nf">main</span>() {
+  <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
+}
+</pre>
+            </div>
+          </div>
+        </div>
+          
+          <h4>Derniers articles :</h4>
+          <ul class="posts">
+            <li>
+              <div id="data">22 août 2023</div>
+              :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[FR] OpenAI-Multitool</b></a>
+            </li>
+            <li>
+              <div id="data">16 août 2022</div>
+              :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[FR] Cyber-sécurité dans le secteur de l'aviation</b></a>
+            </li>
+            <li>
+              <div id="data">09 août 2022</div>
+              :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[FR] Ce site Web a été créé</b></a>
+            </li>
+          </ul>
+          
+          <div class="container">
+            <div class="slider">
+              <pre class="quote hidden"><span class="comment">Une coccinelle rouge, un voyage à Aydin et Mugla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Je ne peux pas tout expérimenter. Viser la perfection entrave la perfection pratique.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un piratage comprend de nombreuses attaques et méthodes différentes.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Tous les différents scénarios qui pourraient particulièrement impacter la sécurité devraient être envisagés.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">J'ai corrigé ce bug, cela n'a juste pas montré son effet. Soyez patient.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Une base de données n'est pas seulement un stockage, c'est le cœur d'un projet. Vous devriez en prendre soin.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Trouver la source du problème est plus précieux que trouver la solution.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un serveur lent est le produit d'un processus de pensée lent.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Une API n'est pas seulement une interface, c'est un pont entre deux systèmes. Vous devez garder ce pont solide.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Coder est un art, on ne peut pas repeindre la toile à chaque erreur.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Ne soyez pas triste quand vous trouvez un bug, car vous avez de la chance de l'avoir trouvé. Le pire, c'est quand il reste caché.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un bon développeur backend prévient les problèmes; un excellent en donne l'impression qu'ils n'ont jamais existé.</span><span class="cursor">|</span></pre>
+              
+              <!-- Plus de citations. -->
+              
+            </div>
+          </div>
+          
+        
         </article>
       </div>
-    </main>
-    <footer>
-      © Copyright, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">self-sponsored</a>
-    </footer>
+      </main>
+      <footer class="lang-fr">
+        © Droits d'auteur, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">auto-financé</a>
+      </footer>
+    
+      <main class="lang-tr">
+        <div class="post">
+          <header class="post-header">
+            <h1></h1>
+          </header>
+          <article class="post-content">
+            <p style="text-align:center;">"Tecrübe yaşlanarak değil, yaşayarak kazanılır; ve zaman insanları değil, armutları olgunlaştırır." <b><span style="color:#cccccc;"><br/>Peyami Safa</span></b></p>
+            <p style="text-align:center;">[Stajyer] </p>
+  
+            <div class="column-container">
+              <div class="highlight-container">
+                  
+                  <!-- Python -->
+                  <div class="highlight">
+                      <pre>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span>, <span class="nb">name</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<span class="nf">greet</span><span class="p">(</span><span class="s">"World"</span><span class="p">)</span>
+</pre>
+                  </div>
+          
+                  <!-- JavaScript -->
+                  <div class="highlight">
+                      <pre>
+<span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">) {</span>
+    <span class="k">console.log</span><span class="p">(</span><span class="s">'Hello, '</span> + <span class="nb">name</span><span class="p">);</span>
+}
+<span class="nf">greet</span><span class="p">(</span><span class="s">'World'</span><span class="p">);</span>
+</pre>
+                  </div>
+          
+                  <!-- C++ -->
+                  <div class="highlight">
+                    <pre>
+<span class="k">#include</span> <span class="s">&lt;iostream&gt;</span>
+<span class="k">int</span> <span class="nf">main</span>() {
+    <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
+}
+</pre>
+              </div>
+            </div>
+          </div>
+          
+          
+  
+              <h4>Latest Posts:</h4>
+              <ul class="posts">
+                <li>
+                  <div id="data">22 Aug 2023</div>
+                  :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[TR] OpenAI-Multitool</b></a>
+                </li>
+                <li>
+                  <div id="data">16 Aug 2022</div>
+                  :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[TR] Havacılık Sektöründe Siber Güvenlik</b></a>
+                </li>
+                <li>
+                  <div id="data">09 Aug 2022</div>
+                  :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[TR] Bu Website oluşturuldu.</b></a>
+                </li>
+              </ul>
+              
+              <div class="container">
+                <div class="slider">
+                  <pre class="quote hidden"><span class="comment">Kırmızı vosvos bi' araba.. Senle aydın ve muğla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Her şeyi tecrübe edemem. Mükemmel olmayı hedeflemek, pratikte mükemmelliğe ulaşmamı engelliyor.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir hack, kişiyi etkileyebileceği birçok farklı saldırı ve birçok farklı yol içerir.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Özellikle güvenlik üzerinde etkisi olabilecek tüm farklı senaryolar üzerinde çalışılmalıdır.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">O hatayı düzelttim, sadece etkisini göstermedi. Sabret.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Veritabanı sadece bir depo değil, bir projenin kalbidir. Ona iyi bakmalısın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Sorunun kaynağını bulmak, çözümü bulmaktan daha değerlidir.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Yavaş bir sunucu, yavaş bir düşünce sürecinin ürünüdür.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir API sadece bir arayüz değil, iki sistem arasındaki köprüdür. O köprüyü güçlü tutmalısın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Kod yazmak bir sanattır, her hatada tuvali yeniden boyayamazsın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir hata bulduğunda üzülme, çünkü onu bulabildiğin için şanslısın. Daha kötüsü, hatanın gizli kalmasıdır.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">İyi bir backend geliştirici, sorunları önler; harika bir backend geliştirici, onları hiç oluşmamış gibi gösterir.</span><span class="cursor">|</span></pre>
+                  
+                  <!-- Daha fazla söz. -->
+                  
+                </div>
+              </div>
+              
+            
+          </article>
+        </div>
+      </main>
+      <footer class="lang-tr">
+        © Telif Hakkı, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">Şahsi Sponsorluk</a>
+      </footer>
+  
     <script id="dsq-count-scr" src="js/count.js" async></script>
-
      <!--flask requirements-->
     <script>
-      let currentQuoteIndex = 0;
-      let charIndex = 0;
-      const quotes = document.querySelectorAll('.quote');
-  
-      function resetQuotes() {
-          quotes.forEach((quote) => {
-              quote.classList.add('hidden');
-              quote.querySelector('.comment').textContent = '';
-          });
-      }
-  
-      function typeEffect() {
-          let currentQuoteText = quotes[currentQuoteIndex].getAttribute('data-original-text');
-          let currentCommentElement = quotes[currentQuoteIndex].querySelector('.comment');
-          let cursorElement = quotes[currentQuoteIndex].querySelector('.cursor');
+    function init(mainClass) {
+        let quotes = document.querySelectorAll(`.${mainClass} .quote`);
+        let currentQuoteIndex = 0;
+        let charIndex = 0;
 
-          cursorElement.style.animation = 'none';  // Yazma sırasında yanıp sönme efektini durdur
+        function resetQuotes() {
+            quotes.forEach((quote) => {
+                quote.classList.add('hidden');
+                quote.querySelector('.comment').textContent = '';
+            });
+        }
 
-          if (charIndex < currentQuoteText.length) {
-              currentCommentElement.textContent += currentQuoteText[charIndex];
-              charIndex++;
-              setTimeout(typeEffect, 50);
-          } else {
-              charIndex = 0;
-              cursorElement.style.animation = '';  // Yazma bittiğinde yanıp sönmeyi geri al
-              setTimeout(nextQuote, 1500);
-          }
-      }
+        function typeEffect() {
+            let currentQuoteText = quotes[currentQuoteIndex].getAttribute('data-original-text');
+            let currentCommentElement = quotes[currentQuoteIndex].querySelector('.comment');
+            let cursorElement = quotes[currentQuoteIndex].querySelector('.cursor');
 
+            cursorElement.style.animation = 'none';  // Writing animation off
 
-  
-      function nextQuote() {
-          resetQuotes();
-          currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-          quotes[currentQuoteIndex].classList.remove('hidden');
-          typeEffect();
-      }
-  
-      function init() {
-          quotes.forEach(quote => {
-              let originalText = quote.querySelector('.comment').textContent;
-              quote.setAttribute('data-original-text', originalText);
-              quote.querySelector('.comment').textContent = '';
-          });
-  
-          quotes[currentQuoteIndex].classList.remove('hidden');
-          typeEffect();
-      }
-  
-      init();
+            if (charIndex < currentQuoteText.length) {
+                currentCommentElement.textContent += currentQuoteText[charIndex];
+                charIndex++;
+                setTimeout(typeEffect, 50);
+            } else {
+                charIndex = 0;
+                cursorElement.style.animation = '';  // Writing finished, re-enable animation
+                setTimeout(nextQuote, 1500);
+            }
+        }
+
+        function nextQuote() {
+            resetQuotes();
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            quotes[currentQuoteIndex].classList.remove('hidden');
+            typeEffect();
+        }
+
+        // Initialize quotes for this main class
+        quotes.forEach(quote => {
+            let originalText = quote.querySelector('.comment').textContent;
+            quote.setAttribute('data-original-text', originalText);
+            quote.querySelector('.comment').textContent = '';
+        });
+
+        quotes[currentQuoteIndex].classList.remove('hidden');
+        typeEffect();
+    }
+
+    // Initialize for each language
+    init('lang-en');
+    init('lang-fr');
+    init('lang-tr');
+
     </script>
   
   
     <script
      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-     crossorigin="anonymous"></script>
+     crossorigin="anonymous">
+    </script>
     <script
      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
