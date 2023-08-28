@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Blog - Self-Improvement to Development</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="" />
+    
+    <!-- Open Graph Etiketleri -->
+    <meta property="og:title" content="Ihsan Ersen - Personal Blog"/>
+    <meta property="og:description" content="Computer Engineering Student && Pilot"/>
+    <meta property="og:image" content="https://sleda.github.io/static/images/thumbnail.jpg"/>
+    <meta property="og:url" content="https://sleda.github.io/"/>
+  
+
+    <link rel="shortcut icon" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/ad7c10301e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <a name="top"></a>
+     <body class="bg-dark" cz-shortcut-listen="true">
+
+    <header>
+      <div id="banner">
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 1;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 2;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+        </div>
+"Personal Blog"
+</div>
+    </header>
+    <div class="menu">
+      <ul>
+        <li><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/whoami/">Whoami</a></li>
+        <li style="background-color: #99999950;"><a href="/projects/" class="btn-shine">Projects</a></li>
+      </ul>
+    </div>
+    <main>
+      <div style="width:100%;text-align:right;"> </div>
+      <ul style="text-align: center; background-color: #575757;">
+        <a> <b style="color: #ffcc66;">Basic</b> | <b style="color: #339999;">Medium</b>
+          | <b style="color: #D0FDD4;">Advanced</b> | <b style="color: #cc3558;">Article</b>
+        </a>
+      </ul>
+      <div class="post">
+        <header class="post-header">
+          <h1><span style="color: #AD03DA;">Web Uygulamaları ve Chat Gateway Yapısı:</span> Real-time Chat Sistemi İle İletişimde Kalmak</h1>
+          <p class="meta">
+            27 Ağustos, 2023 • 
+            <span>TEKNOLOJİ</span> <span style="color: aliceblue;">NestJS ile Typescript </span>
+          </p>
+        </header>
+        <br/>
+        <article class="post-content">
+          <video width="800" height="auto" autoplay loop muted>
+            <source src="../static/images/P01.mp4" type="video/mp4">
+            <source src="../static/images/P01.ogg" type="video/ogg">
+            Tarayıcınızı güncelleyerek videoyu oynatın.
+          </video>
+          <h2>Web Uygulamaları ve Chat Gateway Yapısı</h2>
+          <p>
+            Günümüzde, web uygulamalarının gelişmiş özelliklerle donatılması ve real-time özelliklerin eklenmesi giderek daha popüler bir ihtiyaç haline gelmektedir.
+            <br/><br/>
+            Bu yazıda, NestJS kullanarak hazırladığımız Chat Gateway yapısı ile WebSocket protokolünün nasıl etkili bir şekilde kullanılabileceğini ve kullanıcının gerçek zamanlı olarak mesajlaşma sistemine nasıl dahil edilebileceğini göreceğiz.
+          </p>
+          <br/>
+          <h3>Projenin Amacı:</h3>
+          <p>
+            Bu kod yapısı, kullanıcıların gerçek zamanlı olarak mesajlaşabilmeleri için bir WebSocket gateway'inin nasıl oluşturulabileceğini gösterir. Bu sayede, kullanıcılar arasında gerçek zamanlı bir etkileşim sağlanabilir.
+          </p>
+          <br/>
+          <h3>Web Uygulamalarında Gerçek Zamanlı İletişim Zorlukları ve Çözüm Yolları:</h3>
+          <p>
+            Web uygulamalarında, gerçek zamanlı etkileşim sağlamak bazen karmaşık olabilir. Özellikle çok sayıda kullanıcının aynı anda sisteme bağlı olduğu durumlarda, bu süreç zorlayıcı olabilir. Ancak WebSocket protokolü ve NestJS gibi araçlar, bu tür zorlukların üstesinden gelmemize yardımcı olabilir.
+          </p>
+          <p>
+            Peki, bu Chat Gateway yapısı ile gerçek zamanlı mesajlaşma nasıl sağlanabilir?
+          </p>
+          <h3>Kullanımı:</h3>
+          <p>
+            Eğer bir web uygulamanız varsa ve kullanıcılar arasında gerçek zamanlı bir iletişim sistemi kurmak istiyorsanız, bu "Chat Gateway" yapısını kullanabilirsiniz. Bu yapı, WebSocket protokolü kullanarak real-time bir iletişim kanalı oluşturmanıza yardımcı olacaktır.
+          </p>
+          <h4>Sistemin Bağlantısı ve Mesajlaşma:</h4>
+          <p>
+            Kullanıcılar sisteme bağlandığında, belirli bir oda (room) içerisinde diğer kullanıcılarla mesajlaşabilir. Bu odaların yönetimi ve kullanıcıların bu odalara girişi/çıkışı, bu kod yapısı içerisinde yönetilmektedir.
+          </p>
+          <p>
+            Ayrıca, bu kod yapısı kullanıcının sisteme giriş yapmasını ve oturum bilgilerini saklamasını da sağlar. Bu sayede, kullanıcının daha sonra tekrar sisteme bağlandığında oturum bilgilerine erişimi mümkün hale gelir.
+          </p>
+          <h4>Chat Uygulamasının Öne Çıkan Özellikleri:</h4>
+          <ul>
+            <li>Gerçek zamanlı mesajlaşma</li>
+            <li>Oda bazlı iletişim</li>
+            <li>Oturum yönetimi</li>
+            <li>Kullanıcı sayısının gerçek zamanlı olarak gösterimi</li>
+            <li>Mesaj geçmişinin saklanması</li>
+          </ul>
+          <h3>Sonuç:</h3>
+          <p>
+            NestJS ve WebSocket protokolü, web uygulamalarında gerçek zamanlı etkileşimlerin sağlanmasında mükemmel araçlardır. Bu "Chat Gateway" yapısı, real-time chat uygulamalarının nasıl oluşturulabileceğine dair temel bir rehber sunmaktadır. Bu sayede, web uygulamanıza gerçek zamanlı bir iletişim özelliği eklemek istediğinizde bu yapıyı temel alarak daha karmaşık ve özellikli bir uygulama geliştirebilirsiniz.
+          </p>
+        </article>
+      </div>
+      
+    </main>
+    <button style="background-color: #121212; border: 1px solid #7B61FF;border-radius: 2px;"  title="Go to top"><a style="color:white;" href="#top">Yukarı git</a></button>
+
+    <footer> © Copyright, 2022 | Sponsored by
+      <li><a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce;">self-sponsored</a></li>
+    </footer>
+    <script id="dsq-count-scr" src="js/count.js" async></script>
+  
+</body></html>
