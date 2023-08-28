@@ -50,7 +50,7 @@ def whiplash():
     return render_template('whiplash.html')
 
 @app.route('/chatGateway/')
-def chatify():
+def chatGateway():
     return render_template('chatGateway.html')
 
 if __name__ == '__main__':
