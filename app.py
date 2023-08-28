@@ -25,6 +25,10 @@ def pentest():
 def multitool():
     return render_template('multitool.html')
 
+@app.route('/chatify/')
+def chatify():
+    return render_template('chatify.html')
+
 @app.route('/necmo/')
 def necmo_bot():
     return render_template('necmo.html')
