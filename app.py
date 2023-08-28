@@ -49,5 +49,9 @@ def article_cs_aviation():
 def whiplash():
     return render_template('whiplash.html')
 
+@app.route('/chatGateway/')
+def chatify():
+    return render_template('chatGateway.html')
+
 if __name__ == '__main__':
     freezer.freeze()
