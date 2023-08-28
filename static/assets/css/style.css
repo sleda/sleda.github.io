@@ -81,6 +81,25 @@ body {
 }
 
 
+.language-selection button {
+  width: 35px;
+  height: 45px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  margin: 0; /* Butonlar arasındaki boşluğu kaldır */
+}
+
+
+.language-selection img.icon {
+  width: auto;  /* ya da başka bir boyut */
+  height: 30%; /* ya da başka bir boyut */
+  padding: 3%;
+  border: 1px dashed #78ADD6;
+}
+
 
 
 h1 { color: #666699; }
