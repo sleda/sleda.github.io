@@ -1,75 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Personal Blog - Self-Improvement to Development</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="refresh" content="{{price_log}}" />
-    <link rel="shortcut icon" href="../static/images/favicon.ico" />
-    <link rel="stylesheet" href="../static/assets/css/style.css">
-    <script
-      src="https://kit.fontawesome.com/ad7c10301e.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <a name="top"></a>
-     <body class="bg-dark" cz-shortcut-listen="true">
-
-    <header>
-      <div id="banner">
-        <div class="stack" style="--stacks: 3;">
-          <span style="--index: 0;">
- ███████╗██████╗ ███████╗███████╗███╗   ██╗
- ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
- █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
- ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
- ███████╗██║  ██║███████║███████╗██║ ╚████║
- ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
-          </span>
-          <span style="--index: 1;">
- ███████╗██████╗ ███████╗███████╗███╗   ██╗
- ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
- █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
- ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
- ███████╗██║  ██║███████║███████╗██║ ╚████║
- ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
-          </span>
-          <span style="--index: 2;">
- ███████╗██████╗ ███████╗███████╗███╗   ██╗
- ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
- █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
- ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
- ███████╗██║  ██║███████║███████╗██║ ╚████║
- ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
-          </span>
-        </div>
-"Personal Blog"
-</div>
-    </header>
-    <div class="menu">
-      <ul>
-        <li><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
-        <li style="background-color: #99999950;"><a href="/blog/">Blog</a></li>
-        <li><a href="/whoami/">Whoami</a></li>
-        <li><a href="/projects/" class="btn-shine">Projects</a></li>
-      </ul>
-    </div>
-    <main>
-      <div style="width:100%;text-align:right;"> </div>
-      <ul style="text-align: center; background-color: #575757;">
-        <a> <b style="color: #ffcc66;">Basic</b> | <b style="color: #339999;">Medium</b>
-          | <b style="color: #009900;">Advanced</b> | <b style="color: #cc3558;">Article</b>
-        </a>
-      </ul>
-      <div class="post">
-        <header class="post-header">
-          <h1>Ağ Protokolleri <span style="color:#cc3558 ;font-size:14px;">Article</span></h1>
+{% extends "base.html" %}
+{% block title %}Ağ Protokolleri{% endblock %}
+{% block content %}
+<article class="reading"><a class="back-link" href="/blog/">← Yazılara dön</a><header class="reading-header">
+          <h1>Ağ Protokolleri </h1>
           <p class="meta">
             12 Ağustos, 2022 • 
             <span>TECHNOLOGY</span>
           </p>
-        </header>
-        <article class="post-content">
+        </header><div class="reading-content">
           <h2>ARP</h2>
           <p>
             Adres Çözümleme Protokolü, MAC adreslerini IP adreslerine eşlemek için kullanılan bir layer 2 protokolüdür. 
@@ -134,14 +72,5 @@
           <h4>Intranet tabanlı VPN:</h4> Aynı şirketin birden fazla ofisi Siteden Siteye VPN türü kullanılarak bağlandığında buna Intranet tabanlı VPN denir.<br/>
           <h4>Extranet tabanlı VPN:</h4> Şirketler, başka bir şirketin ofisine bağlanmak için Siteden siteye VPN türünü kullandıklarında buna Extranet tabanlı VPN denir.
         </p>
-        </article>
-      </div>
-    </main>
-    <button style="background-color: #121212; border: 1px solid #7B61FF;border-radius: 2px;"  title="Go to top"><a style="color:white;" href="#top">Yukarı git</a></button>
-
-    <footer> © Copyright, 2022 | Sponsored by
-      <li><a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce;">self-sponsored</a></li>
-    </footer>
-    <script id="dsq-count-scr" src="js/count.js" async></script>
-  
-</body></html>
+        </div><div class="reading-end"><a class="text-link" href="/blog/">← Tüm yazılar</a><a class="text-link" href="/">Ana sayfa ↗</a></div></article>
+{% endblock %}
