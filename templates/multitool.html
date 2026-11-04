@@ -1,17 +1,80 @@
-{% extends "base.html" %}
-{% block title %}OpenAI-Multitool{% endblock %}
-{% block content %}
-<article class="reading"><a class="back-link" href="/projects/">← Projelere dön</a><header class="reading-header">
-          <h1><span>OpenAI-Multitool</span> </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Blog - Self-Improvement to Development</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="{{price_log}}" />
+    <link rel="shortcut icon" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/ad7c10301e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <a name="top"></a>
+     <body class="bg-dark" cz-shortcut-listen="true">
+
+    <header>
+      <div id="banner">
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 1;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 2;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+        </div>
+"Personal Blog"
+</div>
+    </header>
+    <div class="menu">
+      <ul>
+        <li><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/whoami/">Whoami</a></li>
+        <li style="background-color: #99999950;"><a href="/projects/" class="btn-shine">Projects</a></li>
+      </ul>
+    </div>
+    <main>
+      <div style="width:100%;text-align:right;"> </div>
+      <ul style="text-align: center; background-color: #575757;">
+        <a> <b style="color: #ffcc66;">Basic</b> | <b style="color: #339999;">Medium</b>
+          | <b style="color: #D0FDD4;">Advanced</b> | <b style="color: #cc3558;">Article</b>
+        </a>
+      </ul>
+      <div class="post">
+        <header class="post-header">
+          <h1><span style="color: #AD03DA;">OpenAI-Multitool</span> <span style="color:#D0FDD4 ;font-size:14px;">Advanced</span></h1>
           <p class="meta">
-            22 August, 2023 •
-            <span>TECHNOLOGY</span> <span>PyQT | Qt Creator </span>
+            22 August, 2023 • 
+            <span>TECHNOLOGY</span> <span style="color: aliceblue;">PyQT | Qt Creator </span>
           </p>
-        </header><div class="reading-content">
-            <video width="800" height="auto" controls preload="metadata">
+        </header>
+        <br/>
+        <article class="post-content">
+            <video width="800" height="auto" autoplay loop muted>
                 <source src="../static/images/P03.mp4" type="video/mp4">
-
-
+                <source src="../static/images/P03.ogg" type="video/ogg">
+                
                 Videoyu oynatmak için tarayıcınızı güncelleyin.
             </video>
             <h2>CSV Splitter ve OpenAI Dil Modeli Arayüzü</h2>
@@ -27,17 +90,17 @@
             <br/>
             <h3>Büyük Verilerle Çalışmanın Zorlukları ve Çözüm Yolları</h3>
                 <p>
-                    Veri analitiği ve işleme alanında, büyük Excel dosyalarıyla çalışmak bazen zorlu olabilir. Özellikle bu verilerin dil modelleri gibi yapay zeka araçlarıyla işlenmesi gerektiğinde bu süreç karmaşıklaşabilir. Ancak bu gibi araçlar, bu tür zorlukların üstesinden gelmemize yardımcı olabilir.
-                    <br/><br/> Peki, büyük Excel dosyalarını <span>OpenAI-Multitool</span> ile nasıl kolaylıkla düzenleyebiliriz?
+                    Veri analitiği ve işleme alanında, büyük Excel dosyalarıyla çalışmak bazen zorlu olabilir. Özellikle bu verilerin dil modelleri gibi yapay zeka araçlarıyla işlenmesi gerektiğinde bu süreç karmaşıklaşabilir. Ancak bu gibi araçlar, bu tür zorlukların üstesinden gelmemize yardımcı olabilir. 
+                    <br/><br/> Peki, büyük Excel dosyalarını <span style="color: #AD03DA;">OpenAI-Multitool</span> ile nasıl kolaylıkla düzenleyebiliriz?
                 </p>
                 <br/>
             <h3>Kullanımı</h3>
                 <p>
-                    Eğer dosyanız çok büyükse ve dil modeliyle doğrudan çalışmak zorlaşıyorsa, bu noktada "<span>OpenAI-Multitool</span>" aracını kullanabilirsiniz. Bu araç, büyük CSV dosyalarını belirttiğiniz satır sayısına göre parçalara ayırarak, daha yönetilebilir dosya boyutlarına bölmenizi sağlar.
+                    Eğer dosyanız çok büyükse ve dil modeliyle doğrudan çalışmak zorlaşıyorsa, bu noktada "<span style="color: #AD03DA;">OpenAI-Multitool</span>" aracını kullanabilirsiniz. Bu araç, büyük CSV dosyalarını belirttiğiniz satır sayısına göre parçalara ayırarak, daha yönetilebilir dosya boyutlarına bölmenizi sağlar.
                 </p>
             <h4>Excel'den CSV'ye Dönüşüm:</h4>
                 <p>
-                    İlk adım olarak, çalışmamızı kolaylaştırmak için Excel dosyasını CSV formatına dönüştürmeliyiz. CSV, metin tabanlı bir format olduğu için dil modelleriyle etkileşimde bulunmak için daha uygundur. Excel'in içeri aktarma/çıkartma özellikleri sayesinde, Excel dosyalarını kolaylıkla CSV'ye dönüştürebiliriz.
+                    İlk adım olarak, çalışmamızı kolaylaştırmak için Excel dosyasını CSV formatına dönüştürmeliyiz. CSV, metin tabanlı bir format olduğu için dil modelleriyle etkileşimde bulunmak için daha uygundur. Excel'in içeri aktarma/çıkartma özellikleri sayesinde, Excel dosyalarını kolaylıkla CSV'ye dönüştürebiliriz.        
                 </p>
 
             <h4>Veriyi Düzenleme</h4>
@@ -53,5 +116,14 @@
                 <p>
                     ChatGPT, büyük Excel dosyalarını hızla düzenlemenin yanı sıra, veri analizi ve yorumlama gibi birçok ileri seviye işlemi kolaylaştıran mükemmel bir araçtır. "OpenAI-Multitool" gibi araçlarla birleştiğinde, veri bilimi projelerinizde size büyük bir avantaj sağlar. Böylece, geleneksel yöntemlere kıyasla çok daha hızlı ve etkili bir şekilde veri işleme yapabilirsiniz.
                 </p>
-        </div><div class="reading-end"><a class="text-link" href="/projects/">← Tüm projeler</a><a class="text-link" href="/">Ana sayfa ↗</a></div></article>
-{% endblock %}
+        </article>
+      </div>
+    </main>
+    <button style="background-color: #121212; border: 1px solid #7B61FF;border-radius: 2px;"  title="Go to top"><a style="color:white;" href="#top">Yukarı git</a></button>
+
+    <footer> © Copyright, 2022 | Sponsored by
+      <li><a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce;">self-sponsored</a></li>
+    </footer>
+    <script id="dsq-count-scr" src="js/count.js" async></script>
+  
+</body></html>
