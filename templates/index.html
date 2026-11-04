@@ -1,43 +1,452 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ihsan Ersen is a full-stack developer building products, systems, and developer tools. Explore his work and writing.">
-  <meta property="og:title" content="Ihsan Ersen — Developer & builder">
-  <meta property="og:description" content="Building thoughtful products, from infrastructure to interface.">
-  <meta property="og:url" content="https://sleda.github.io/">
-  <meta name="theme-color" content="#101512">
-  <link rel="icon" href="/static/images/favicon.ico">
-  <link rel="stylesheet" href="/static/assets/css/home.css">
-  <title>Ihsan Ersen — Developer & builder</title>
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="topbar wrap">
-    <a class="brand" href="/" aria-label="Ihsan Ersen home"><span class="brand-mark">i<span>.</span>e</span><span>İhsan Ersen <small> / sleda</small></span></a>
-    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#writing">Writing</a><a class="nav-contact" href="mailto:ihsan.ersen@hotmail.com">Get in touch <span aria-hidden="true">↗</span></a></nav>
-  </header>
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="intro-title">
-      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> DEVELOPER &amp; BUILDER <span class="slash">/</span> ISTANBUL</p>
-        <h1 id="intro-title">Ideas are good.<br><em>Building</em> is better<span class="period">.</span></h1>
-        <p class="intro">I'm İhsan, a full-stack developer who enjoys turning complex problems into useful products — from the interface all the way to the infrastructure.</p>
-        <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/sleda">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+  <head>
+    <title>Ihsan Ersen - Self-Growth & Code</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="" />
+    
+    <!-- Open Graph Etiketleri -->
+    <meta property="og:title" content="Ihsan Ersen - Personal Blog"/>
+    <meta property="og:description" content="Computer Engineering Student && Pilot"/>
+    <meta property="og:image" content="https://sleda.github.io/static/images/thumbnail.jpg"/>
+    <meta property="og:url" content="https://sleda.github.io/"/>  
+
+    <link rel="shortcut icon" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="../static/assets/css/translateelement.css">
+    <script src="https://kit.fontawesome.com/ad7c10301e.js" crossorigin="anonymous"></script>
+      
+    <script>
+        function changeLanguage(lang) {
+          const trElements = document.querySelectorAll('.lang-tr');
+          const enElements = document.querySelectorAll('.lang-en');
+          const frElements = document.querySelectorAll('.lang-fr');
+      
+          if (lang === 'tr') {
+            trElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'none');
+          } else if (lang === 'en') {
+            trElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+          } else if (lang === 'fr') {
+            trElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'block');
+          }
+        }
+        window.addEventListener('load', () => {
+          let lang;
+          if (navigator.language.startsWith('tr')) {
+            lang = 'tr';
+          } else if (navigator.language.startsWith('fr')) {
+            lang = 'fr';
+          } else {
+            lang = 'en';
+          }
+          changeLanguage(lang);
+        });
+
+      </script>
+      
+  </head>
+
+  <body class="bg-dark" cz-shortcut-listen="true">
+    <header>
+      <!-- Add language selection -->
+      <header>
+        <!-- Dil seçimi -->
+        <div class="language-selection"> 
+          <button onclick="changeLanguage('en')"><img src="../static/icons/uk.svg" alt="EN" class="icon"></button> 
+          <button onclick="changeLanguage('fr')"><img src="../static/icons/fr.svg" alt="EN" class="icon"></button>
+          <button onclick="changeLanguage('tr')"><img src="../static/icons/tr.svg" alt="EN" class="icon"></button>
+        </div>
+      </header>
+      
+      <div id="banner">
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 1;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+          <span style="--index: 2;">
+ ███████╗██████╗ ███████╗███████╗███╗   ██╗
+ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+ █████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║
+ ██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║
+ ███████╗██║  ██║███████║███████╗██║ ╚████║
+ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝
+          </span>
+        </div>
+"Personal Blog"
+</div>
+    </header>
+    <div class="menu">
+      <ul>
+        <li style="background-color: #99999950;"><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/whoami/">Whoami</a></li>
+        <li><a href="/projects/" class="btn-shine">Projects</a></li>
+      </ul>
+    </div>
+    <!-- Main content -->
+    <main class="lang-en">
+        <div class="post">
+          <header class="post-header">
+            <h1></h1>
+          </header>
+          <article class="post-content">
+            <p style="text-align:center;">"Experience is gained not by getting older, but by living; and time ripens pears, not people."<b><span style="color:#cccccc;"><br/>Peyami Safa</span></b></p>
+            <p style="text-align:center;">[Intern]</p>
+      
+            <div class="column-container">
+                <div class="highlight-container">
+                    
+                <!-- Python -->
+                <div class="highlight">
+                    <pre>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span>, <span class="nb">name</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<span class="nf">greet</span><span class="p">(</span><span class="s">"World"</span><span class="p">)</span>
+</pre>
+                </div>
+        
+                <!-- JavaScript -->
+                <div class="highlight">
+                    <pre>
+<span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">) {</span>
+    <span class="k">console.log</span><span class="p">(</span><span class="s">'Hello, '</span> + <span class="nb">name</span><span class="p">);</span>
+}
+<span class="nf">greet</span><span class="p">(</span><span class="s">'World'</span><span class="p">);</span>
+</pre>
+                </div>
+        
+                <!-- C++ -->
+                <div class="highlight">
+                  <pre>
+<span class="k">#include</span> <span class="s">&lt;iostream&gt;</span>
+<span class="k">int</span> <span class="nf">main</span>() {
+    <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
+}
+</pre>
+                </div>
+              </div>
+            </div>
+            
+            <h4>Latest Posts:</h4>
+            <ul class="posts">
+              <li>
+                <div id="data">Aug 22, 2023</div>
+                :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                        </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[EN] OpenAI-Multitool</b></a>
+              </li>
+              <li>
+                <div id="data">Aug 16, 2022</div>
+                :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                        </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[EN] Cybersecurity in the Aviation Sector</b></a>
+              </li>
+              <li>
+                <div id="data">Aug 09, 2022</div>
+                :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
+                        </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[EN] This Website Was Created</b></a>
+              </li>
+            </ul>
+            
+            <div class="container">
+              <div class="slider">
+                <pre class="quote hidden"><span class="comment">A red VW Beetle, a trip to Aydin and Mugla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">I can't experience everything. Striving for perfection hampers practical perfection.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A hack comprises many different attacks and many different methods.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">All different scenarios that could particularly impact security should be worked on.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">I fixed that bug, it just didn't show its effect. Be patient.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A database is not just a storage, it's the heart of a project. You should take good care of it.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Finding the source of the problem is more valuable than finding the solution.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A slow server is the product of a slow thought process.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">An API is not just an interface, it's a bridge between two systems. You should keep that bridge strong.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Coding is an art, you can't repaint the canvas at every mistake.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">Don't be sad when you find a bug, because you're lucky to have found it. Worse is when it remains hidden.</span><span class="cursor">|</span></pre>
+                <pre class="quote hidden"><span class="comment">A good backend developer prevents problems; a great one makes them seem like they never happened.</span><span class="cursor">|</span></pre>
+                
+                <!-- More quotes. -->
+                
+              </div>
+            </div>
+            
+          
+          </article>
+        </div>
+      </main>
+      <footer class="lang-en">
+        © Copyright, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">self-sponsored</a>
+      </footer>
+      
+    <main class="lang-fr">
+      <div class="post">
+        <header class="post-header">
+          <h1></h1>
+        </header>
+        <article class="post-content">
+          <p style="text-align:center;">"L'expérience n'est pas acquise en vieillissant, mais en vivant; et le temps mûrit les poires, pas les gens."<b><span style="color:#cccccc;"><br/>Peyami Safa</span></b></p>
+          <p style="text-align:center;">[Stagiaire]</p>
+    
+          <div class="column-container">
+            <div class="highlight-container">
+                
+                <!-- Python -->
+                <div class="highlight">
+                    <pre>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span>, <span class="nb">name</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<span class="nf">greet</span><span class="p">(</span><span class="s">"World"</span><span class="p">)</span>
+</pre>
+                </div>
+        
+                <!-- JavaScript -->
+                <div class="highlight">
+                    <pre>
+<span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">) {</span>
+  <span class="k">console.log</span><span class="p">(</span><span class="s">'Hello, '</span> + <span class="nb">name</span><span class="p">);</span>
+}
+<span class="nf">greet</span><span class="p">(</span><span class="s">'World'</span><span class="p">);</span>
+</pre>
+                </div>
+        
+                <!-- C++ -->
+                <div class="highlight">
+                  <pre>
+<span class="k">#include</span> <span class="s">&lt;iostream&gt;</span>
+<span class="k">int</span> <span class="nf">main</span>() {
+  <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
+}
+</pre>
+            </div>
+          </div>
+        </div>
+          
+          <h4>Derniers articles :</h4>
+          <ul class="posts">
+            <li>
+              <div id="data">22 août 2023</div>
+              :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[FR] OpenAI-Multitool</b></a>
+            </li>
+            <li>
+              <div id="data">16 août 2022</div>
+              :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[FR] Cyber-sécurité dans le secteur de l'aviation</b></a>
+            </li>
+            <li>
+              <div id="data">09 août 2022</div>
+              :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
+                      </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[FR] Ce site Web a été créé</b></a>
+            </li>
+          </ul>
+          
+          <div class="container">
+            <div class="slider">
+              <pre class="quote hidden"><span class="comment">Une coccinelle rouge, un voyage à Aydin et Mugla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Je ne peux pas tout expérimenter. Viser la perfection entrave la perfection pratique.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un piratage comprend de nombreuses attaques et méthodes différentes.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Tous les différents scénarios qui pourraient particulièrement impacter la sécurité devraient être envisagés.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">J'ai corrigé ce bug, cela n'a juste pas montré son effet. Soyez patient.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Une base de données n'est pas seulement un stockage, c'est le cœur d'un projet. Vous devriez en prendre soin.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Trouver la source du problème est plus précieux que trouver la solution.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un serveur lent est le produit d'un processus de pensée lent.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Une API n'est pas seulement une interface, c'est un pont entre deux systèmes. Vous devez garder ce pont solide.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Coder est un art, on ne peut pas repeindre la toile à chaque erreur.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Ne soyez pas triste quand vous trouvez un bug, car vous avez de la chance de l'avoir trouvé. Le pire, c'est quand il reste caché.</span><span class="cursor">|</span></pre>
+              <pre class="quote hidden"><span class="comment">Un bon développeur backend prévient les problèmes; un excellent en donne l'impression qu'ils n'ont jamais existé.</span><span class="cursor">|</span></pre>
+              
+              <!-- Plus de citations. -->
+              
+            </div>
+          </div>
+          
+        
+        </article>
       </div>
-      <div class="hero-aside" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-center">IE<span>✳</span></div><span class="aside-label">THOUGHTFUL SYSTEMS<br>BUILT FOR PEOPLE</span><span class="aside-number">01 / 04</span></div>
-    </section>
-    <section id="work" class="section"><div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Things I've built<span class="period">.</span></h2></div><p>Products and systems, from an idea to the details that make them work.</p></div>
-      <div class="work-grid"><article class="project project-featured"><div class="project-top"><span>01 / PRODUCT</span><a href="https://navly.app" aria-label="Visit Navly">↗</a></div><div class="project-art" aria-hidden="true"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="art-star">✳</div><span>GO SOMEWHERE<br><strong>NEW.</strong></span></div><div class="project-info"><div><p class="project-kicker">FOUNDER &amp; LEAD DEVELOPER</p><h3>Navly</h3></div><p>An AI-powered travel guide, built across mobile and web with a shared TypeScript foundation.</p></div><div class="tags"><span>PRODUCT</span><span>AI</span><span>REACT NATIVE</span><span>TYPESCRIPT</span></div></article>
-      <article class="project project-secondary"><div class="project-top"><span>02 / LOGISTICS</span><a href="https://yoourcargo.com" aria-label="Visit Yoourcargo">↗</a></div><div class="cargo-art" aria-hidden="true"><span>Y<span>↗</span></span><div class="cargo-line"></div><small>SOFTWARE IN MOTION</small></div><div class="project-info"><div><p class="project-kicker">FULL-STACK &amp; DEVOPS</p><h3>Yoourcargo</h3></div><p>Building features and delivery infrastructure for a logistics platform, from application code to CI/CD.</p></div><div class="tags"><span>.NET</span><span>POSTGRESQL</span><span>AZURE DEVOPS</span></div></article></div>
-    </section>
-    <section id="experience" class="section experience"><div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE</p><h2>Built through doing<span class="period">.</span></h2></div><p>A little context on the teams, tools, and challenges behind the work.</p></div>
-      <div class="experience-list"><article><div><span class="date">AUG 2024 — PRESENT</span><h3>Oregon Technology</h3><p>Full-Stack Developer &amp; DevOps Engineer</p></div><p>Developing Yoourcargo's application and backend services, managing relational databases, and owning CI/CD and release workflows in Azure DevOps.</p></article><article><div><span class="date">FOUNDER &amp; LEAD DEVELOPER</span><h3>Navly</h3><p>AI-powered travel guide</p></div><p>Building the product end to end, including its TypeScript monorepo, application interfaces, authorization, and deployment workflows.</p></article><article><div><span class="date">APR 2023 — FEB 2024</span><h3>Teknopark İstanbul</h3><p>Back-end Developer Intern</p></div><p>Worked on APIs for prescription software, using TypeScript, Node.js, NestJS, Python, and MongoDB.</p></article></div>
-      <div class="skills"><span>THE TOOLKIT</span><p>TypeScript <i>✳</i> React <i>✳</i> Node.js <i>✳</i> .NET <i>✳</i> PostgreSQL <i>✳</i> Docker <i>✳</i> Azure DevOps</p></div>
-    </section>
-    <section id="writing" class="section writing"><div class="section-heading"><div><p class="eyebrow">03 / NOTES &amp; IDEAS</p><h2>From the blog<span class="period">.</span></h2></div><a class="text-link" href="/blog/">All writing <span aria-hidden="true">↗</span></a></div><div class="article-list"><a href="/chatGateway/"><span>27 AUG 2023 <b>·</b> TR</span><strong>WebSocket Tabanlı Sohbet Uygulaması</strong><span class="arrow">↗</span></a><a href="/cs-aviation/"><span>16 AUG 2022 <b>·</b> TR</span><strong>Havacılık Sektöründe Siber Güvenlik</strong><span class="arrow">↗</span></a><a href="/network-technologies/"><span>14 AUG 2022 <b>·</b> TR</span><strong>Ağ Teknolojileri</strong><span class="arrow">↗</span></a></div></section>
-    <section class="contact section"><p class="eyebrow">04 / SAY HELLO</p><div class="contact-row"><h2>Have something<br><em>in mind?</em></h2><a class="contact-button" href="mailto:ihsan.ersen@hotmail.com" aria-label="Email İhsan Ersen">↗</a></div><p>Always happy to talk about building useful things.</p><a class="email" href="mailto:ihsan.ersen@hotmail.com">ihsan.ersen@hotmail.com</a></section>
-  </main>
-  <footer class="wrap footer"><span>© İhsan Ersen</span><span>MADE WITH CURIOSITY <span class="period">✳</span></span><div><a href="https://github.com/sleda">GitHub ↗</a><a href="https://www.linkedin.com/in/sleda/">LinkedIn ↗</a></div></footer>
-</body>
+      </main>
+      <footer class="lang-fr">
+        © Droits d'auteur, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">auto-financé</a>
+      </footer>
+    
+      <main class="lang-tr">
+        <div class="post">
+          <header class="post-header">
+            <h1></h1>
+          </header>
+          <article class="post-content">
+            <p style="text-align:center;">"Tecrübe yaşlanarak değil, yaşayarak kazanılır; ve zaman insanları değil, armutları olgunlaştırır." <b><span style="color:#cccccc;"><br/>Peyami Safa</span></b></p>
+            <p style="text-align:center;">[Stajyer] </p>
+  
+            <div class="column-container">
+              <div class="highlight-container">
+                  
+                  <!-- Python -->
+                  <div class="highlight">
+                      <pre>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span>, <span class="nb">name</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<span class="nf">greet</span><span class="p">(</span><span class="s">"World"</span><span class="p">)</span>
+</pre>
+                  </div>
+          
+                  <!-- JavaScript -->
+                  <div class="highlight">
+                      <pre>
+<span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nb">name</span><span class="p">) {</span>
+    <span class="k">console.log</span><span class="p">(</span><span class="s">'Hello, '</span> + <span class="nb">name</span><span class="p">);</span>
+}
+<span class="nf">greet</span><span class="p">(</span><span class="s">'World'</span><span class="p">);</span>
+</pre>
+                  </div>
+          
+                  <!-- C++ -->
+                  <div class="highlight">
+                    <pre>
+<span class="k">#include</span> <span class="s">&lt;iostream&gt;</span>
+<span class="k">int</span> <span class="nf">main</span>() {
+    <span class="nb">std::cout</span> << <span class="s">"Hello, World!"</span> << <span class="nb">std::endl</span>;
+}
+</pre>
+              </div>
+            </div>
+          </div>
+          
+          
+  
+              <h4>Latest Posts:</h4>
+              <ul class="posts">
+                <li>
+                  <div id="data">22 Aug 2023</div>
+                  :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/multitool"><b>[TR] OpenAI-Multitool</b></a>
+                </li>
+                <li>
+                  <div id="data">16 Aug 2022</div>
+                  :: <b><span class="post-link"><b><span style="color: #cc3558;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/cs-aviation"><b>[TR] Havacılık Sektöründe Siber Güvenlik</b></a>
+                </li>
+                <li>
+                  <div id="data">09 Aug 2022</div>
+                  :: <b><span class="post-link"><b><span style="color: #ffcc66;">[*]
+                          </span></b></span></b><a href="https://sleda.github.io/blog/"><b>[TR] Bu Website oluşturuldu.</b></a>
+                </li>
+              </ul>
+              
+              <div class="container">
+                <div class="slider">
+                  <pre class="quote hidden"><span class="comment">Kırmızı vosvos bi' araba.. Senle aydın ve muğla.. ⛱️🕶️</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Her şeyi tecrübe edemem. Mükemmel olmayı hedeflemek, pratikte mükemmelliğe ulaşmamı engelliyor.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir hack, kişiyi etkileyebileceği birçok farklı saldırı ve birçok farklı yol içerir.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Özellikle güvenlik üzerinde etkisi olabilecek tüm farklı senaryolar üzerinde çalışılmalıdır.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">O hatayı düzelttim, sadece etkisini göstermedi. Sabret.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Veritabanı sadece bir depo değil, bir projenin kalbidir. Ona iyi bakmalısın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Sorunun kaynağını bulmak, çözümü bulmaktan daha değerlidir.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Yavaş bir sunucu, yavaş bir düşünce sürecinin ürünüdür.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir API sadece bir arayüz değil, iki sistem arasındaki köprüdür. O köprüyü güçlü tutmalısın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Kod yazmak bir sanattır, her hatada tuvali yeniden boyayamazsın.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">Bir hata bulduğunda üzülme, çünkü onu bulabildiğin için şanslısın. Daha kötüsü, hatanın gizli kalmasıdır.</span><span class="cursor">|</span></pre>
+                  <pre class="quote hidden"><span class="comment">İyi bir backend geliştirici, sorunları önler; harika bir backend geliştirici, onları hiç oluşmamış gibi gösterir.</span><span class="cursor">|</span></pre>
+                  
+                  <!-- Daha fazla söz. -->
+                  
+                </div>
+              </div>
+              
+            
+          </article>
+        </div>
+      </main>
+      <footer class="lang-tr">
+        © Telif Hakkı, 2022 | <a href="https://www.linkedin.com/in/root-/" target="_blank" style="color: #0089ce">Şahsi Sponsorluk</a>
+      </footer>
+  
+    <script id="dsq-count-scr" src="js/count.js" async></script>
+     <!--flask requirements-->
+    <script>
+    function init(mainClass) {
+        let quotes = document.querySelectorAll(`.${mainClass} .quote`);
+        let currentQuoteIndex = 0;
+        let charIndex = 0;
+
+        function resetQuotes() {
+            quotes.forEach((quote) => {
+                quote.classList.add('hidden');
+                quote.querySelector('.comment').textContent = '';
+            });
+        }
+
+        function typeEffect() {
+            let currentQuoteText = quotes[currentQuoteIndex].getAttribute('data-original-text');
+            let currentCommentElement = quotes[currentQuoteIndex].querySelector('.comment');
+            let cursorElement = quotes[currentQuoteIndex].querySelector('.cursor');
+
+            cursorElement.style.animation = 'none';  // Writing animation off
+
+            if (charIndex < currentQuoteText.length) {
+                currentCommentElement.textContent += currentQuoteText[charIndex];
+                charIndex++;
+                setTimeout(typeEffect, 50);
+            } else {
+                charIndex = 0;
+                cursorElement.style.animation = '';  // Writing finished, re-enable animation
+                setTimeout(nextQuote, 1500);
+            }
+        }
+
+        function nextQuote() {
+            resetQuotes();
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            quotes[currentQuoteIndex].classList.remove('hidden');
+            typeEffect();
+        }
+
+        // Initialize quotes for this main class
+        quotes.forEach(quote => {
+            let originalText = quote.querySelector('.comment').textContent;
+            quote.setAttribute('data-original-text', originalText);
+            quote.querySelector('.comment').textContent = '';
+        });
+
+        quotes[currentQuoteIndex].classList.remove('hidden');
+        typeEffect();
+    }
+
+    // Initialize for each language
+    init('lang-en');
+    init('lang-fr');
+    init('lang-tr');
+
+    </script>
+  
+  
+    <script
+     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+     crossorigin="anonymous">
+    </script>
+    <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+     crossorigin="anonymous"
+   ></script>
+  </body>
 </html>
